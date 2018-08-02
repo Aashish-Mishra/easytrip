@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lowfloorbus"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:src="@mipmap/easytrips"
+            android:alpha="0.75"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Low Floor Buses"
+            android:textSize="40dp"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            />
+        <TextView
+            android:layout_width="115dp"
+            android:layout_height="40dp"
+            android:text="Source"
+            android:textSize="30dp"
+            android:paddingLeft="15dp"
+            android:textColor="@color/colorWhite"/>
+        <EditText
+            android:id="@+id/source"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="Enter source"
+            android:clickable="true"
+            android:focusable="false"/>
+        <TextView
+            android:layout_width="175dp"
+            android:layout_height="40dp"
+            android:text="Destination"
+            android:textSize="30dp"
+            android:paddingLeft="15dp"
+            android:textColor="@color/colorWhite"/>
+        <EditText
+            android:id="@+id/destination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Destination"
+            android:clickable="true"
+            android:focusable="false"/>
+        <Button
+            android:id="@+id/getbus"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:text="Get Bus"
+            android:textSize="25dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</LinearLayout>
